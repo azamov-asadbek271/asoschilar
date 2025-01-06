@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Inter-regular;
+    src: url("./fonts/inter-fonts/inter/Inter_18pt-Regular.ttf");
+}
+@font-face {
+    font-family: Poppins-regular;
+    src: url("./fonts/poppins-fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family:  Poppins-medium;
+    src: url("./fonts/poppins-fonts/Poppins-Medium.ttf");
+}
+
+body {
+    background: #0d0d0d;
+    height: 200vh;
+    overflow-x: hidden;
+    width: 100vw;
+
+}
+.header-container {
+    background-image: url("./images/header-img/jamoa.png");
+    max-width: 100%;
+    height: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
