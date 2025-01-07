@@ -49,9 +49,8 @@ body {
 .mini-container {
   max-width: 1320px;
   width: 100%;
-  padding: 20px;
+  padding: 20px 40px;
   margin: 0 auto;
-
 }
 .header {
   padding: 50px;
@@ -238,8 +237,8 @@ body {
 
 /* MAIN-CARD QISMI */
 .main-card {
-  border: 2px solid white;
   text-align: center;
+  margin-bottom: 200px;
 }
 .main-card_title {
   font-size: 30px;
@@ -261,8 +260,9 @@ body {
 }
 .main-card_container_box {
   flex-grow: 1;
-  height: 255px;
-  background-color: rgba(38, 38, 38, 1);
+  width: 218px;
+  height: 225px;
+  background-color: #1b1b1b;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -284,12 +284,26 @@ body {
   height: 69px;
 }
 .main-card_container_box_prg {
-  width: 211px;
+  width: 230px;
+  line-height: 24px;
+  text-align: center;
 }
 
 /* animatisya uchun */
 
 /* media query */
+
+@media (max-width: 1049px) {
+  .main-card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; 
+    border: 2px solid red;
+  }
+  .main-card_container_box {
+    width: 100%;
+  }
+}
 @media (max-width: 824px) {
   /*  header modal */
   .header_right {
@@ -332,13 +346,25 @@ body {
     height: 30px;
   }
 }
-@media (max-width: 768px) { 
-    .main-card_container_box_banner {
-      width: 90px;
-      height: 90px;
-    }
-    .main-card_container_box_banner_img {
-      width: 49px;
-      height: 49px;
-    }
+@media (max-width: 768px) {
+  .main-card_container_box_banner {
+    width: 90px;
+    height: 90px;
+  }
+  .main-card_container_box_banner_img {
+    width: 49px;
+    height: 49px;
+  }
+  .main-card_container_box {
+    height: auto;
+  }
+   .main-card_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   }
+   .main-card_container_box_prg {
+    font-size: 18px;
+    line-height: 20px;
+   }
 }
