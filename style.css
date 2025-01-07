@@ -81,8 +81,8 @@ body {
 /* icon */
 .modal_open_icon {
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -91,6 +91,8 @@ body {
 }
 .fa-bars {
   color: #0d0d0d;
+  font-size: 24px;
+  
 }
 
 
@@ -105,5 +107,11 @@ body {
   }
   .fa-bars {
     display: flex;
+  }
+  .header {
+    padding: 15px;
+  }
+  .header_logo  {
+    height: 50px;
   }
 }
