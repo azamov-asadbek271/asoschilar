@@ -298,7 +298,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px; 
-    border: 2px solid red;
   }
   .main-card_container_box {
     width: 100%;
