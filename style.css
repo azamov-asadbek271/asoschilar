@@ -355,6 +355,7 @@ body {
     height: 49px;
   }
   .main-card_container_box {
+    max-width: 300px;
     height: auto;
     padding-bottom: 20px;
   }
@@ -362,9 +363,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
    }
    .main-card_container_box_prg {
-    font-size: 18px;
+    max-width: 150px;
+    padding: 0 2px;
+    font-size: 16px;
     line-height: 20px;
    }
+  
 }
