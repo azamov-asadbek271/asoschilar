@@ -357,6 +357,7 @@ body {
   }
   .main-card_container_box {
     height: auto;
+    padding-bottom: 20px;
   }
    .main-card_container {
     display: flex;
