@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- css fayl -->
+    <!-- css fayl -->
     <link rel="stylesheet" href="./style.css">
     <title>Asoschilar-club</title>
 </head>
@@ -19,7 +19,8 @@
     <header class="header-container">
         <div class="container header">
             <div class="header_logo_box">
-                <img class="header_logo" src="./images/header-img/div.framer-i3d0tu.svg" alt="asoschilar logosi">
+                <a href="/index.html"><img class="header_logo" src="./images/header-img/div.framer-i3d0tu.svg"
+                        alt="asoschilar logosi"></a>
             </div>
             <nav class="header_nav">
                 <ul class="nav_list">
@@ -35,17 +36,23 @@
                 </ul>
             </nav>
             <div class="header_right">
-                <a class="header_right_phone" href="#">+998 99 033 99 38</a>
-                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <a class="header_right_phone" href="tel:+998 99 033 99 38">+998 99 033 99 38</a>
             </div>
+            <div id="modal_open_menu" class="modal_menu_open">
                 <div class="modal_open_icon">
                     <i class="fa-solid fa-bars"></i>
                 </div>
+            </div>
+
+        </div>
+        <div class="modal" id="modal">
+            <i id="modal_close_icon" class="fa-solid fa-xmark modal_close"></i>
 
         </div>
     </header>
 
-
+    <!-- javaScript -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
