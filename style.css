@@ -361,7 +361,7 @@ body {
    .main-card_container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
    }
    .main-card_container_box_prg {
     font-size: 18px;
