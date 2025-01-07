@@ -45,7 +45,6 @@ body {
   max-width: 1612px;
   width: 100%;
   margin: 0 auto;
-  border: 2px solid red;
 }
 .header {
   padding: 50px;
@@ -115,8 +114,9 @@ body {
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 0 10px 50px 10px;
+  justify-content: space-between;
+  padding: 50px 10px 50px 10px;
+  transition: left 0.5s ease;
 }
 .open_modal_left {
   left: 0;
@@ -149,12 +149,13 @@ body {
   font-family: Inter-regular;
 }
 .modal_header_right {
-    max-width: 300px;
+  max-width: 300px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   padding: 20px 0;
+  margin-bottom: 80px;
 }
 .modal_header_right_phone {
   color: #fff;
@@ -165,6 +166,81 @@ body {
   transition: 0.3s;
   width: 100%;
 }
+/*  HEADER BOTTOM QISMI */
+.header_box_bottom {
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 85px 0;
+}
+.header_box_bottom_title {
+  max-width: 683px;
+  font-family: Poppins-medium;
+  font-size: 132px;
+  line-height: 132px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(243.33deg, #fffff7 8.55%, #727267 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -2.4px;
+  margin-bottom: 30px;
+}
+.header_box_bottom_prh {
+  max-width: 516px;
+  text-align: center;
+  font-family: Inter-regular;
+  color: rgb(185, 188, 177);
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 49px;
+}
+.header_box_bottom_link {
+  padding: 10px 15px 10px 24px;
+  background-color: #fff;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.animatsiya {
+  opacity: 0;
+  transform: translateY(50px) scale(0.5);
+  transition: all 0.8s ease-out;
+}
+.show-text {
+  opacity: 1; /* Matn ko'rinadi */
+  transform: translateY(0) scale(1); /* Matn joylashadi va kattalashadi */
+}
+.hide-text {
+  opacity: 0;
+  transform: translateY(50px) scale(0.5); /* Matn yuqoriga chiqib, kichik bo'ladi */
+}
+.header_box_bottom_link_span {
+  font-family: Poppins-medium;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+.header_box_bottom_link_img {
+    width: 38px;
+    height: 38px;
+}
+/* MAIN QISMI */
+
+/* MAIN-CARD QISMI */
+.main-card {
+  border: 2px solid white;
+}
+.main-card_container_box {
+  border: 2px solid red;
+
+}
+.main-card_container_box_banner {
+}
+
+/* animatisya uchun */
 
 /* media query */
 @media (max-width: 824px) {
@@ -178,10 +254,34 @@ body {
   .modal_menu_open {
     display: flex;
   }
+  /* HEADER QISMI */
   .header {
     padding: 20px 15px;
   }
   .header_logo {
     height: 50px;
+  }
+
+/* HEADER BOTTOM QISMI */
+  .header_box_bottom_title {
+    font-size: 53px;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+  .header_box_bottom_prh {
+    width: 250px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .header_box_bottom_link {
+    padding: 8px 14px 8px 20px;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .header_box_bottom_link_img {
+    width: 30px;
+    height: 30px;
   }
 }
