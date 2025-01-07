@@ -115,7 +115,7 @@ body {
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 10px 50px 10px;
 }
 .open_modal_left {
@@ -123,7 +123,7 @@ body {
 }
 .modal_header_top {
   display: flex;
-  padding: 50px 50px 0 50px;
+  padding: 0 50px 0 50px;
 }
 .modal_header_top_img {
   margin-left: auto;
@@ -142,20 +142,19 @@ body {
   justify-content: center;
   gap: 36px;
   width: 100%;
-  
 }
 .modal_nav-list-item_link {
   color: #fff;
   font-size: 24px;
   font-family: Inter-regular;
-  
 }
 .modal_header_right {
-    width: 100%;
+    max-width: 300px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  
+  padding: 20px 0;
 }
 .modal_header_right_phone {
   color: #fff;
