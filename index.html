@@ -19,8 +19,6 @@
 <body>
     <!-- header -->
 
-
-
     <header class="header-container">
 
         <div class="container header">
@@ -79,15 +77,15 @@
 
         </div>
 
-            <div class="header_box_bottom">
-                <h1 class="header_box_bottom_title" data-aos="fade-up">Asoschilar Club </h1>
-                <p class="header_box_bottom_prh " data-aos="fade-up">Katta maqsadli tadbirkorlar uchun yopiq biznes klub</p>
-                <a class="header_box_bottom_link " href="#" data-aos="fade-up">
-                    <span class="header_box_bottom_link_span">Ariza topshirish</span>
-                    <img class="header_box_bottom_link_img" src="./images/header-img/Group-ariza.svg"
-                        alt="  barmoq izini rasmi ariza uchun">
-                </a>
-            </div>
+        <div class="header_box_bottom">
+            <h1 class="header_box_bottom_title" data-aos="fade-up">Asoschilar Club </h1>
+            <p class="header_box_bottom_prh " data-aos="fade-up">Katta maqsadli tadbirkorlar uchun yopiq biznes klub</p>
+            <a class="header_box_bottom_link " href="#" data-aos="fade-up">
+                <span class="header_box_bottom_link_span">Ariza topshirish</span>
+                <img class="header_box_bottom_link_img" src="./images/header-img/Group-ariza.svg"
+                    alt="  barmoq izini rasmi ariza uchun">
+            </a>
+        </div>
         <!-- MAIN-CARD QISMI -->
         <div class="mini-container">
             <div class="main-card ">
@@ -164,9 +162,15 @@
     </main>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+            duration: 800, // Animatsiya davomiyligi (ms)
+            once: true,    // Animatsiya faqat bir marta ishlaydi
+            offset: 120,   // Trigger nuqtasi
+        });
+    });
+</script>
     <!-- javaScript -->
     <script src="/js/main.js"></script>
 </body>
