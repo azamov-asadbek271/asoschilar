@@ -1,15 +1,15 @@
 /* css fonts */
 @font-face {
   font-family: Inter-regular;
-  src: url("./fonts/inter-fonts/inter/Inter_18pt-Regular.ttf");
+  src: url("../fonts/inter-fonts/inter/Inter_18pt-Regular.ttf");
 }
 @font-face {
   font-family: Poppins-regular;
-  src: url("./fonts/poppins-fonts/Poppins-Regular.ttf");
+  src: url("../fonts/poppins-fonts/Poppins-Regular.ttf");
 }
 @font-face {
   font-family: Poppins-medium;
-  src: url("./fonts/poppins-fonts/Poppins-Medium.ttf");
+  src: url("../fonts/poppins-fonts/Poppins-Medium.ttf");
 }
 * {
   margin: 0;
@@ -28,17 +28,16 @@ body {
   font-family: Poppins-regular;
   font-size: 20px;
   line-height: 24px;
-  border: 2px solid red;
   position: relative;
 }
 /* header */
 .header-container {
-  background-image: url("./images/header-img/jamoa.png");
+  background-image: url("../images/header-img/jamoa.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   object-fit: cover;
-  border: 5px dashed aqua;
+  margin-bottom: 92px;
 }
 
 .container {
@@ -47,7 +46,7 @@ body {
   margin: 0 auto;
 }
 .mini-container {
-  max-width: 1320px;
+  max-width: 1280px;
   width: 100%;
   padding: 20px 40px;
   margin: 0 auto;
@@ -193,6 +192,7 @@ body {
   color: transparent;
   letter-spacing: -2.4px;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 .header_box_bottom_prh {
   max-width: 516px;
@@ -211,19 +211,8 @@ body {
   align-items: center;
   gap: 22px;
 }
-.animatsiya {
-  opacity: 0;
-  transform: translateY(50px) scale(0.5);
-  transition: all 0.8s ease-out;
-}
-.show-text {
-  opacity: 1; /* Matn ko'rinadi */
-  transform: translateY(0) scale(1); /* Matn joylashadi va kattalashadi */
-}
-.hide-text {
-  opacity: 0;
-  transform: translateY(50px) scale(0.5); /* Matn yuqoriga chiqib, kichik bo'ladi */
-}
+
+
 .header_box_bottom_link_span {
   font-family: Poppins-medium;
   line-height: 30px;
@@ -238,8 +227,8 @@ body {
 /* MAIN-CARD QISMI */
 .main-card {
   text-align: center;
-  margin-bottom: 200px;
 }
+
 .main-card_title {
   font-size: 30px;
   line-height: 52px;
@@ -268,7 +257,9 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 24px;
+  padding: 10px 0;
 }
+
 .main-card_container_box_banner {
   background-color: rgba(255, 255, 255, 1);
   width: 120px;
@@ -289,15 +280,108 @@ body {
   text-align: center;
 }
 
-/* animatisya uchun */
+/* MAIN-PRIVILEGE */
+.main-privilege {
+  text-align: center;
+  position: relative;
+}
+.main-privilege_left {
+  width: 330px;
+  position: absolute;
+  left: -310px;
+  bottom: -320px;
+}
 
+.main-privilege_title {
+  margin-bottom: 60px;
+  font-size: 30px;
+  line-height: 52px;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -1.32px;
+}
+.main_privilege_boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.netvorking_box {
+  display: flex;
+  padding: 15px 15px 16px 21px;
+  width: 329px;
+  background-color: rgba(27, 27, 27, 1);
+  align-items: center;
+  border-radius: 30px;
+  gap: 18px;
+}
+.netvorking_box_img {
+    width: 84px;
+  height: 84px;
+}
+.netvorking_box_title {
+  color: rgba(204, 204, 204, 1);
+
+}
+.razborlar_box {
+  display: flex;
+  padding: 15px 15px 16px 21px;
+  width: 329px;
+  background-color: rgba(27, 27, 27, 1);
+  align-items: center;
+  border-radius: 30px;
+  gap: 18px;
+}
+.razborlar_box_img {
+   width: 80px;
+  height: 80px;
+}
+.razborlar_box_title {
+  color: rgba(204, 204, 204, 1);
+
+}
+.spiker_box {
+  display: flex;
+  padding: 15px 15px 16px 21px;
+  width: 329px;
+  border-radius: 30px;
+  background-color: rgba(27, 27, 27, 1);
+  align-items: center;
+  gap: 18px;
+}
+.spiker_box_img {
+  width: 85px;
+  height: 85px;
+}
+.spiker_box_title {
+  color: rgba(204, 204, 204, 1);
+}
 /* media query */
+
+@media (max-width: 1090px) {
+  .razborlar_box {
+    width: 45%;
+  }
+  .spiker_box {
+    width: 45%;
+  }
+  .netvorking_box {
+    width: 45%;
+  }
+  .main_privilege_boxes {
+    gap: 20px;
+  }
+}
 
 @media (max-width: 1049px) {
   .main-card_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px; 
+    gap: 30px;
   }
   .main-card_container_box {
     width: 100%;
@@ -359,17 +443,24 @@ body {
     height: auto;
     padding-bottom: 20px;
   }
-   .main-card_container {
+  .main-card_container {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
-   }
-   .main-card_container_box_prg {
-    max-width: 150px;
+  }
+  .main-card_container_box_prg {
     padding: 0 2px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
-   }
-  
+  }
+  .netvorking_box {
+    width: 100%;
+  }
+  .spiker_box {
+    width: 100%;
+  }
+  .razborlar_box {
+    width: 100%;
+  }
 }

@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos animatsiya -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- css fayl -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Asoschilar-club</title>
 </head>
 
 <body>
     <!-- header -->
+
 
 
     <header class="header-container">
@@ -77,9 +80,9 @@
         </div>
 
         <div class="header_box_bottom">
-            <h1 class="header_box_bottom_title animatsiya">Asoschilar Club </h1>
-            <p class="header_box_bottom_prh animatsiya">Katta maqsadli tadbirkorlar uchun yopiq biznes klub</p>
-            <a class="header_box_bottom_link animatsiya" href="#">
+            <h1 class="header_box_bottom_title" data-aos="fade-up">Asoschilar Club </h1>
+            <p class="header_box_bottom_prh " data-aos="fade-up">Katta maqsadli tadbirkorlar uchun yopiq biznes klub</p>
+            <a class="header_box_bottom_link " href="#" data-aos="fade-up">
                 <span class="header_box_bottom_link_span">Ariza topshirish</span>
                 <img class="header_box_bottom_link_img" src="./images/header-img/Group-ariza.svg"
                     alt="  barmoq izini rasmi ariza uchun">
@@ -87,10 +90,11 @@
         </div>
         <!-- MAIN-CARD QISMI -->
         <div class="mini-container">
-            <div class="main-card ">
-                <p class="main-card_title">Biz bilan birgalikda:</p>
+            <div class="main-card  ">
+                <p class="main-card_title " data-aos="fade-up">Biz bilan birgalikda:</p>
                 <div class="main-card_container">
-                    <div class="main-card_container_box">
+                    <!-- birinchi box -->
+                    <div class="main-card_container_box " data-aos="fade-up-right">
                         <div class="main-card_container_box_banner">
                             <img class="main-card_container_box_banner_img" src="./images/main-img/main-card/Idea.png"
                                 alt="Idea image">
@@ -98,7 +102,7 @@
                         <p class="main-card_container_box_prg">Tajriba almashasiz va yangi g‘oyalar olasiz</p>
                     </div>
                     <!-- 2-chi quti -->
-                    <div class="main-card_container_box">
+                    <div class="main-card_container_box " data-aos="fade-up">
                         <div class="main-card_container_box_banner">
                             <img class="main-card_container_box_banner_img"
                                 src="./images/main-img/main-card/Thunder.png" alt=" Thunder image">
@@ -106,7 +110,7 @@
                         <p class="main-card_container_box_prg">Energiya yig‘asiz va yaxshi vaqt o’tkazasiz!</p>
                     </div>
                     <!-- uchunchi quti -->
-                    <div class="main-card_container_box">
+                    <div class="main-card_container_box " data-aos="fade-up">
                         <div class="main-card_container_box_banner">
                             <img class="main-card_container_box_banner_img"
                                 src="./images/main-img/main-card/Businessman.png" alt=" Businessman image">
@@ -114,7 +118,7 @@
                         <p class="main-card_container_box_prg">Muvaffaqiyatli tadbirkorlar bilan tanishasiz</p>
                     </div>
                     <!-- tortinchi quti -->
-                    <div class="main-card_container_box">
+                    <div class="main-card_container_box" data-aos="fade-up-left">
                         <div class="main-card_container_box_banner">
                             <img class="main-card_container_box_banner_img" src="./images/main-img/main-card/plus1.png"
                                 alt=" plus image">
@@ -129,13 +133,41 @@
     </header>
     <main class="main">
         <div class="container">
+            <div class="mini-container">
+                <section class="main-privilege">
+                    <img class="main-privilege_left" src="./images/main-img/main-priviilege/Rectangle.png" alt="klaviyatura" data-aos="zoom-in-right" data-aos-duration="1000">
+                    
+                    <p class="main-privilege_title" data-aos="fade-up">Klub imtiyozlari:</p>
+                    <div class="main_privilege_boxes">
+                        <div class="netvorking_box"  data-aos="fade-up-right">
+                            <img class="netvorking_box_img" src="./images/main-img/main-priviilege/quti.png"
+                                alt=" quri haqida rasm">
+                            <p class="netvorking_box_title">Networking</p>
+                        </div>
+                        <div class="razborlar_box" data-aos="fade-up">
+                            <img class="razborlar_box_img" src="./images/main-img/main-priviilege/rasbor.png"
+                                alt="razbor  haqida ras">
+                            <p class="razborlar_box_title">Razborlar</p>
+                        </div>
+                        <div class="spiker_box" data-aos="fade-up-left">
+                            <img class="spiker_box_img" src="./images/main-img/main-priviilege/spiker.png"
+                                alt="spiker haqida rasm">
+                            <p class="spiker_box_title">Mehmon spikerlar</p>
+                        </div>
 
+                    </div>
+                </section>
+            </div>
 
         </div>
     </main>
-
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- javaScript -->
-    <script src="./main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
