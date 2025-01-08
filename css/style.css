@@ -284,6 +284,7 @@ body {
 .main-privilege {
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 .main-privilege_left {
   width: 330px;
