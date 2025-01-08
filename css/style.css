@@ -38,6 +38,8 @@ body {
   background-position: center center;
   object-fit: cover;
   margin-bottom: 92px;
+  border: 2px solid blue;
+  overflow: hidden;
 }
 
 .container {
@@ -46,7 +48,8 @@ body {
   margin: 0 auto;
 }
 .mini-container {
-  max-width: 1280px;
+  border: 2px solid red;
+  max-width: 1320px;
   width: 100%;
   padding: 20px 40px;
   margin: 0 auto;
