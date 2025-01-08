@@ -232,6 +232,7 @@ body {
 }
 
 .main-card_title {
+  margin-top: 50px;
   font-size: 30px;
   line-height: 52px;
   letter-spacing: -1.32px;
