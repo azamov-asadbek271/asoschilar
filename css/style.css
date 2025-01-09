@@ -292,7 +292,7 @@ body {
 .main-privilege {
   text-align: center;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 82px;
 }
 .main-privilege_left {
   width: 330px;
@@ -372,6 +372,34 @@ body {
 .spiker_box_title {
   color: rgba(204, 204, 204, 1);
 }
+/* MAIN - FORM */
+
+.contact_box {
+  border:  2px solid red;
+}
+.contact_box_title {
+}
+.form {
+}
+.name_form {
+}
+.name_label {
+}
+.name_input {
+}
+.phone_number {
+}
+.phone_label {
+}
+.phone_input {
+}
+.form_input {
+}
+.header_box_bottom_link_span {
+}
+.header_box_bottom_link_img {
+}
+
 /* media query */
 
 @media (max-width: 1090px) {
@@ -469,15 +497,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  /* .razborlar_box {
-    width: 100%;
-  }
-  .netvorking_box {
-    width: 100%;
-  }
-  .spiker_box {
-    width: 100%;
-  } */
+ 
   .header_box_bottom_title {
     font-size: 43px;
     margin-top: 20px;
