@@ -39,7 +39,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   position: relative;
-  border: 2px solid red;
 }
 /* header */
 .header-container {
@@ -475,7 +474,7 @@ body {
 /* ABOUT  Our */
 .about_our {
   padding: 0 40px;
-  margin-bottom: 200px;
+  margin-bottom: 140px;
 }
 .about_our_title {
   text-align: center;
@@ -484,18 +483,17 @@ body {
     #fffff7 0%,
     rgba(255, 255, 247, 0.34) 100%
   );
-    color: transparent;
+  color: transparent;
   background-clip: text;
   font-size: 30px;
   line-height: 52px;
   letter-spacing: -1.32px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .about_our_boxes {
   display: flex;
-  
-  gap: 30px;
 
+  gap: 30px;
 }
 .about_our_row {
   display: flex;
@@ -504,23 +502,21 @@ body {
   flex-direction: column;
 
   gap: 22px;
-
 }
 .about_our_row_title {
   font-family: Poppins-SemiBold;
- font-size: 51px;
- line-height: 41px;
- letter-spacing: -1.14px;
+  font-size: 51px;
+  line-height: 41px;
+  letter-spacing: -1.14px;
 
- color: rgba(204, 204, 204, 1);
+  color: rgba(204, 204, 204, 1);
 }
 .about_our_row_prh {
   max-width: 497px;
   font-size: 28px;
   line-height: 48px;
- letter-spacing: -1.14px;
- color: rgba(204, 204, 204, 1);
-
+  letter-spacing: -1.14px;
+  color: rgba(204, 204, 204, 1);
 }
 .about_our_img_box {
   display: flex;
@@ -528,7 +524,47 @@ body {
   justify-content: center;
 }
 .about_our_img {
- width: 100%;
+  width: 100%;
+}
+/* STATIC SECTION */
+.statistic_section {
+  margin-bottom: 200px;
+}
+.statistic_section_title {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  margin-bottom: 80px;
+}
+.statistic_section_text {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+  gap: 20px;
+}
+.member {
+}
+.member_title {
+  font-size: 70px;
+  line-height: 73px;
+  letter-spacing: -1.4px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.member_prh {
+  max-width: 291px;
+  text-align: center;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: rgba(122, 122, 122, 1);
 }
 /* media query */
 
@@ -558,6 +594,24 @@ body {
   }
   .about_our_row_prh {
     line-height: 38px;
+  }
+}
+@media (max-width: 950px) {
+  .statistic_section_text {
+    flex-wrap: wrap;
+  }
+  .member_title {
+    font-size: 54px;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .member_prh {
+    font-size: 18px;
+    max-width: 200px;
+  }
+  .member_left_box {
+    width: 100%;
+    text-align: left;
   }
 }
 @media (max-width: 824px) {
@@ -605,12 +659,25 @@ body {
   .about_our_row_title {
     font-size: 36px;
   }
-  .about_our_row_prh  {
+  .about_our_row_prh {
     font-size: 18px;
     line-height: 1.2;
   }
 }
 @media (max-width: 768px) {
+  .statistic_section_text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .member_title {
+    text-align: center;
+  }
+  .member_left_box {
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+  }
   .main-card_container_box_banner {
     width: 90px;
     height: 90px;
@@ -681,10 +748,9 @@ body {
   }
   .about_our_boxes {
     flex-direction: column-reverse;
-    
   }
   .about_our {
-    padding:  0 20;
+    padding: 0 20;
   }
 }
 
