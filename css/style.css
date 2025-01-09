@@ -579,6 +579,7 @@ body {
   }
   .form {
     flex-direction: column;
+    align-items: flex-start;
     padding: 0 20px;
   }
   .name_form {
@@ -598,6 +599,9 @@ body {
   }
   .netvorking_box {
    max-width: 100%;
+  }
+  .header_box_bottom_link_img {
+    width: 30px;
   }
 }
 
