@@ -452,6 +452,7 @@ body {
   align-items: center;
   justify-content: space-around;
   margin-top: 30px;
+  border: none;
 
 }
 .form_button_span {
@@ -584,6 +585,10 @@ body {
   }
   .name_form {
     width: 100%;
+  }
+  .form_button {
+    text-align: left;
+    margin: 0;
   }
 }
 
