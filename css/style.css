@@ -18,7 +18,8 @@
   text-decoration: none;
   list-style: none;
 }
-html,body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -49,9 +50,10 @@ body {
   max-width: 1612px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 .mini-container {
-  max-width: 1320px;
+  max-width: 1280px;
   width: 100%;
   padding: 20px 40px;
   margin: 0 auto;
@@ -182,8 +184,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* padding: 85px 0; */
-  /* margin-bottom: 138px; */
+  padding: 85px 0;
+  margin-bottom: 80px;
 }
 .header_box_bottom_title {
   max-width: 683px;
@@ -251,10 +253,10 @@ body {
 .main-card_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding-left: 40px;
+  gap: 27px;
 }
 .main-card_container_box {
-  max-width: 90%;
+  max-width: 100%;
   width: 100%;
   background-color: #1b1b1b;
   border-radius: 30px;
@@ -263,6 +265,7 @@ body {
   flex-direction: column;
   gap: 24px;
   padding: 0 0 10px 0;
+   height: 255px;
 }
 
 .main-card_container_box_banner {
@@ -289,6 +292,7 @@ body {
 .main-privilege {
   text-align: center;
   position: relative;
+  margin-bottom: 200px;
 }
 .main-privilege_left {
   width: 330px;
@@ -313,8 +317,11 @@ body {
 .main_privilege_boxes {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 .netvorking_box {
+  width: 100%;
   display: flex;
   padding: 15px 15px 16px 21px;
   max-width: 329px;
@@ -331,6 +338,7 @@ body {
   color: rgba(204, 204, 204, 1);
 }
 .razborlar_box {
+  width: 100%;
   display: flex;
   padding: 15px 15px 16px 21px;
   max-width: 329px;
@@ -338,8 +346,7 @@ body {
   align-items: center;
   border-radius: 30px;
   gap: 18px;
-  margin-right: auto;
-  margin-left: auto;
+ 
 }
 .razborlar_box_img {
   width: 80px;
@@ -349,6 +356,7 @@ body {
   color: rgba(204, 204, 204, 1);
 }
 .spiker_box {
+  width: 100%;
   display: flex;
   padding: 15px 15px 16px 21px;
   max-width: 329px;
@@ -368,13 +376,13 @@ body {
 
 @media (max-width: 1090px) {
   .razborlar_box {
-    width: 40%;
+    width: 100%;
   }
   .spiker_box {
-    width: 40%;
+    width: 100%;
   }
   .netvorking_box {
-    width: 40%;
+    width: 100%;
   }
 }
 
@@ -458,18 +466,18 @@ body {
     line-height: 20px;
   }
   .main_privilege_boxes {
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .razborlar_box {
-    margin: 10px 0;
-    width: 90%;
+  /* .razborlar_box {
+    width: 100%;
   }
   .netvorking_box {
-    width: 90%;
+    width: 100%;
   }
   .spiker_box {
-    width: 90%;
-  }
+    width: 100%;
+  } */
   .header_box_bottom_title {
     font-size: 43px;
     margin-top: 20px;
@@ -477,7 +485,7 @@ body {
 }
 
 @media (max-width: 468px) {
- .mini-container {
-  padding: 0;
- }
+  .mini-container {
+    padding: 0;
+  }
 }
