@@ -492,7 +492,6 @@ body {
 }
 .about_our_boxes {
   display: flex;
-
   gap: 30px;
 }
 .about_our_row {
@@ -508,7 +507,6 @@ body {
   font-size: 51px;
   line-height: 41px;
   letter-spacing: -1.14px;
-
   color: rgba(204, 204, 204, 1);
 }
 .about_our_row_prh {
@@ -528,7 +526,7 @@ body {
 }
 /* STATIC SECTION */
 .statistic_section {
-  margin-bottom: 200px;
+  margin-bottom: 164px;
 }
 .statistic_section_title {
   text-align: center;
@@ -550,14 +548,20 @@ body {
   padding: 0 30px;
   gap: 20px;
 }
-.member {
-}
 .member_title {
   font-size: 70px;
   line-height: 73px;
   letter-spacing: -1.4px;
   text-align: center;
   margin-bottom: 12px;
+  background: linear-gradient(
+    29.07deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-weight: 400;
 }
 .member_prh {
   max-width: 291px;
@@ -565,6 +569,122 @@ body {
   line-height: 26px;
   letter-spacing: -0.2px;
   color: rgba(122, 122, 122, 1);
+}
+/* MISION - SECTION*/
+.mision-section {
+  position: relative;
+  padding: 0 40px;
+  margin-bottom: 100px;
+}
+.mision-section_title {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  margin-bottom: 40px;
+}
+.mision-section_box {
+  padding: 78px 75px 99px 75px;
+  text-align: center;
+  background: linear-gradient(113.49deg, #ffffff 0%, #d2d2d2 100%);
+  border-radius: 24px;
+}
+.mision-section-box_img {
+  width: 189px;
+  height: 189px;
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+}
+.mision-section-box_prh {
+  max-width: 100%;
+  font-family: Poppins-medium;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: -1.62px;
+  text-align: center;
+  background: rgba(0, 0, 0, 1);
+  color: transparent;
+  background-clip: text;
+}
+/* INFO SECTION */
+.info-section {
+  padding: 0 30px;
+}
+.info-section_title {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  margin-bottom: 40px;
+}
+.info-section_col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 82px;
+}
+.info-section_box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 18px 15px 20px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.info-section_box:nth-child(1) {
+  order: 1;
+}
+.info-section_box:nth-child(2) {
+  order: 2;
+}
+.info-section_box:nth-child(3) {
+  order: 3;
+}
+.info-section_box:nth-child(4) {
+  order: 1;
+}
+.info-section_box:nth-child(5) {
+  order: 2;
+}
+.info-section_box:nth-child(6) {
+  order: 3;
+}
+
+.info-section-box_title {
+  font-family: Poppins-medium;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 132px;
+  align-items: center;
+  text-align: center;
+  background: rgba(224, 224, 224, 1);
+  color: transparent;
+  background-clip: text;
+}
+.info-section-box_prg {
+  line-height: 26px;
+  letter-spacing: -1.14px;
+  background: rgba(0, 0, 0, 1);
+  color: transparent;
+  background-clip: text;
+}
+.info_title_box {
+    display: flex;
 }
 /* media query */
 
@@ -580,6 +700,9 @@ body {
   }
   .form {
     padding: 0;
+  }
+  .info-section_col {
+    gap: 20px 40px;
   }
 }
 
@@ -612,6 +735,35 @@ body {
   .member_left_box {
     width: 100%;
     text-align: left;
+  }
+  .info-section_box {
+    gap: 20px;
+  }
+}
+@media (max-width: 884px) {
+  .info-section_col {
+    grid-template-columns: 1fr;
+  }
+  .info-section_box:nth-child(1) {
+    order: 1;
+  }
+  .info-section_box:nth-child(2) {
+    order: 2;
+  }
+  .info-section_box:nth-child(3) {
+    order: 3;
+  }
+  .info-section_box:nth-child(4) {
+    order: 4;
+  }
+  .info-section_box:nth-child(5) {
+    order: 5;
+  }
+  .info-section_box:nth-child(6) {
+    order: 6;
+  }
+  .info-section_box {
+    padding-left: 20px;
   }
 }
 @media (max-width: 824px) {
@@ -674,9 +826,9 @@ body {
   }
   .member_left_box {
     display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .main-card_container_box_banner {
     width: 90px;
@@ -752,6 +904,21 @@ flex-direction: column;
   .about_our {
     padding: 0 20;
   }
+
+  /* MISSON */
+  .mision-section-box_prh {
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: -1px;
+  }
+  .mision-section_box {
+    padding: 40px 30px;
+  }
+  .mision-section-box_img {
+    width: 121px;
+    height: 121px;
+    right: 0;
+  }
 }
 
 @media (max-width: 468px) {
@@ -760,5 +927,11 @@ flex-direction: column;
   }
   .main_privilege_boxes {
     padding: 0 20px;
+  }
+  .mision-section_box {
+    padding: 20px 10px;
+  }
+  .mision-section-box_prh {
+    font-size: 18px;
   }
 }
