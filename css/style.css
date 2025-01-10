@@ -684,7 +684,7 @@ body {
   background-clip: text;
 }
 .info_title_box {
-    display: flex;
+  display: flex;
 }
 /* media query */
 
@@ -918,6 +918,13 @@ body {
     width: 121px;
     height: 121px;
     right: 0;
+  }
+  .info-section-box_title {
+    font-size: 80px;
+  }
+  info-section-box_prg {
+    font-size: 16px;
+    line-height: 1.2;
   }
 }
 
