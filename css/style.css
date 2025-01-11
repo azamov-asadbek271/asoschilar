@@ -859,6 +859,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -1px;
+
 }
 .joining-article_col_box_prh_link {
   color: #4f9bff;
@@ -1167,8 +1168,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    max-width: 380px;
-    padding: 20px 10px;
+    max-width: 430px;
+    
   }
   .joining-article_col_box {
     align-items: center;
@@ -1205,4 +1206,7 @@ body {
   .meeting_section_col_box_prh {
     font-size: 18px;
   }
+   .joining_article_col {
+    padding: 20px 5px;
+   }
 }
