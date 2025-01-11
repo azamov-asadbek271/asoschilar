@@ -800,6 +800,9 @@ body {
 .meeting_section_col_box_prh_bold {
   font-weight: 600px;
 }
+.razbor_meeting {
+  font-weight: 900;
+}
 
 /* media query */
 
