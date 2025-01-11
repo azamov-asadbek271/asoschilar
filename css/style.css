@@ -1167,7 +1167,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    max-width: 360px;
+    max-width: 380px;
     padding: 20px 10px;
   }
   .joining-article_col_box {
@@ -1175,7 +1175,7 @@ body {
     text-align: center;
   }
   .strelka_img {
-    margin: 0;
+    margin: 40px 0;
     transform: rotate(90deg);
   }
 }
