@@ -1207,6 +1207,9 @@ body {
     font-size: 18px;
   }
    .joining_article_col {
-    padding: 20px 5px;
+    /* padding: 20px 5px; */
+   }
+   .joining_article_col {
+    gap: 5px;
    }
 }
