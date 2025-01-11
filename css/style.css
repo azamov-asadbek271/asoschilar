@@ -1112,8 +1112,8 @@ body {
   .consditions_col_box_circle_prh {
     text-align: center;
   }
-  .meeting_section_col_box_img {
-    max-width: 40px;
-    max-height: 40px;
+    .meeting_section {
+    padding: 30px 10px 30px 20px;
   }
+  
 }
