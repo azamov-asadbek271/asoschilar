@@ -803,7 +803,70 @@ body {
 .razbor_meeting {
   font-weight: 900;
 }
+/* aside joining */
+.joining-article {
+  padding: 20px 40px;
+  margin-bottom: 87px;
+}
+.joining-article_title {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  margin-bottom: 40px;
+}
+.joining_article_col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 37px 22px 37px;
+  background-color: #fff;
+  border-radius: 24px;
+  gap: 20px;
+}
+.joining-article_col_box:nth-child(3) {
+  max-width: 160px;
+}
+.joining-article_col_box:nth-child(5) {
+  max-width: 160px;
+}
 
+.strelka_img {
+  width: 43px;
+  margin-top: 80px;
+}
+.joining-article_col_box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 257px;
+  background: rgba(0, 0, 0, 1);
+  color: transparent;
+  background-clip: text;
+}
+.joining-article_col_box_img {
+  width: 74px;
+  height: 74px;
+}
+.joining-article_col_box_prh {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -1px;
+}
+.joining-article_col_box_prh_link {
+  color: #4f9bff;
+}
+.joining-article_col_box_check {
+  width: 49px;
+  height: 49px;
+}
 /* media query */
 
 @media (max-width: 1090px) {
@@ -853,13 +916,12 @@ body {
   }
 }
 @media (max-width: 1000px) {
-.meeting_section_col {
-  grid-template-columns: 1fr;
-}
-.meeting_section_col_box_prh {
-  font-size: 20px;
-}
-  
+  .meeting_section_col {
+    grid-template-columns: 1fr;
+  }
+  .meeting_section_col_box_prh {
+    font-size: 20px;
+  }
 }
 @media (max-width: 950px) {
   .statistic_section_text {
@@ -1094,6 +1156,28 @@ body {
   .meeting_section {
     padding: 30px 10px;
   }
+  .joining-article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  .joining_article_col {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 360px;
+    padding: 20px 10px;
+  }
+  .joining-article_col_box {
+    align-items: center;
+    text-align: center;
+  }
+  .strelka_img {
+    margin: 0;
+    transform: rotate(90deg);
+  }
 }
 
 @media (max-width: 468px) {
@@ -1109,17 +1193,16 @@ body {
   .mision-section-box_prh {
     font-size: 18px;
   }
-    .conditions_col  {
-      padding: 0 10px;
-    }
+  .conditions_col {
+    padding: 0 10px;
+  }
   .consditions_col_box_circle_prh {
     text-align: center;
   }
-    .meeting_section {
+  .meeting_section {
     padding: 30px 20px;
   }
   .meeting_section_col_box_prh {
     font-size: 18px;
   }
-  
 }
