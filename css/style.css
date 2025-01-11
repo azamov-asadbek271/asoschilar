@@ -786,8 +786,9 @@ body {
 }
 
 .meeting_section_col_box_img {
-  max-width: 60px;
-  min-height: 60px;
+  max-width: 50px;
+  min-height: 50px;
+  object-fit: cover;
 }
 .meeting_section_col_box_prh {
   background: rgba(0, 0, 0, 1);
@@ -1069,6 +1070,7 @@ body {
   }
   .conditions_col {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
   .conditions_col_box {
     padding: 16px;
@@ -1109,5 +1111,9 @@ body {
     }
   .consditions_col_box_circle_prh {
     text-align: center;
+  }
+  .meeting_section_col_box_img {
+    max-width: 40px;
+    max-height: 40px;
   }
 }
