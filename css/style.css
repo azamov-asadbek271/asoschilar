@@ -859,7 +859,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -1px;
-
 }
 .joining-article_col_box_prh_link {
   color: #4f9bff;
@@ -867,6 +866,113 @@ body {
 .joining-article_col_box_check {
   width: 49px;
   height: 49px;
+}
+
+/* PRICE SECTION */
+.price-section {
+  margin-bottom: 130px;
+  padding: 0 5px;
+}
+.price-section_title {
+  font-size: 44px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.price-section_prh {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  margin-bottom: 40px;
+}
+.price-section_prh_num {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 115px;
+  line-height: 120px;
+  letter-spacing: -1.62px;
+  margin-bottom: 30px;
+}
+.price-section_month {
+  padding: 30px;
+}
+.price-section_month_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 44px;
+}
+.monthly-three:nth-child(2),
+.monthly-three:nth-child(3) {
+  background-color: #121212;
+}
+
+.price-section_month_title {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  margin-bottom: 40px;
+}
+.monthly-three {
+  padding: 35px 16px 33px 14px;
+  border-radius: 30px;
+  background-color: rgba(38, 38, 38, 1);
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  gap: 22px;
+  position: relative;
+}
+.monthly-three_title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 22px;
+  background: rgba(204, 204, 204, 1);
+  color: transparent;
+  background-clip: text;
+}
+.monthly-three_prh {
+  text-align: center;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: -0.52;
+  background: rgba(204, 204, 204, 1);
+  color: transparent;
+  background-clip: text;
+}
+.mothly_num {
+  position: absolute;
+  font-size: 140px;
+  bottom: 54px;
+  left: 0;
+  opacity: 5%;
+  font-weight: 600;
 }
 /* media query */
 
@@ -923,6 +1029,20 @@ body {
   .meeting_section_col_box_prh {
     font-size: 20px;
   }
+}
+@media (max-width: 980px) {
+  .price-section_month_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  /* .monthly-three:nth-child(2) {
+  order: 3;
+  margin: 0 auto;
+  grid-column: span 2;
+  border: 2px solid red;
+  padding: 35px 40px;
+  } */
 }
 @media (max-width: 950px) {
   .statistic_section_text {
@@ -1169,7 +1289,6 @@ body {
     align-items: center;
     gap: 30px;
     max-width: 430px;
-    
   }
   .joining-article_col_box {
     align-items: center;
@@ -1178,6 +1297,37 @@ body {
   .strelka_img {
     margin: 40px 0;
     transform: rotate(90deg);
+  }
+  .price-section_title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .price-section_prh {
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  .price-section_prh_num {
+    font-size: 83px;
+    line-height: 1;
+  }
+  .price-section_month_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .price-section_month_title {
+    font-size: 22px;
+  }
+  .monthly-three_title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .monthly-three_prh {
+    font-size: 22px;
+  }
+  .mothly_num {
+    font-size: 110px;
   }
 }
 
@@ -1206,10 +1356,7 @@ body {
   .meeting_section_col_box_prh {
     font-size: 18px;
   }
-   .joining_article_col {
-    /* padding: 20px 5px; */
-   }
-   .joining_article_col {
+  .joining_article_col {
     gap: 5px;
-   }
+  }
 }
