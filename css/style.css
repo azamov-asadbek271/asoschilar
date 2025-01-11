@@ -1115,5 +1115,8 @@ body {
     .meeting_section {
     padding: 30px 10px 30px 20px;
   }
+  .meeting_section_col_box_prh {
+    font-size: 18px;
+  }
   
 }
