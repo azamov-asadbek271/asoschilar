@@ -873,6 +873,10 @@ body {
   margin-bottom: 130px;
   padding: 0 5px;
 }
+.price_aside {
+   
+   padding: 0 40px;
+}
 .price-section_title {
   font-size: 44px;
   line-height: 52px;
@@ -880,6 +884,13 @@ body {
   text-align: center;
   font-weight: 400;
   margin-bottom: 50px;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
 }
 .price-section_prh {
   text-align: center;
@@ -911,6 +922,7 @@ body {
 }
 .price-section_month {
   padding: 30px;
+  border-top: 2px dashed rgba(76, 76, 76, 1)
 }
 .price-section_month_box {
   display: grid;
@@ -1038,13 +1050,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  /* .monthly-three:nth-child(2) {
-  order: 3;
-  margin: 0 auto;
-  grid-column: span 2;
-  border: 2px solid red;
-  padding: 35px 40px;
-  } */
+ 
 }
 @media (max-width: 950px) {
   .statistic_section_text {
@@ -1320,6 +1326,7 @@ body {
   }
   .price-section_month_title {
     font-size: 22px;
+    line-height: 1.2;
   }
   .monthly-three_title {
     font-size: 28px;
@@ -1360,5 +1367,8 @@ body {
   }
   .joining_article_col {
     gap: 5px;
+  }
+  .price_aside {
+    padding: 0 30px;
   }
 }
