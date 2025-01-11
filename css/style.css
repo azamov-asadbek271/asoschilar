@@ -57,7 +57,7 @@ body {
   overflow: hidden;
 }
 .mini-container {
-  max-width: 1220px;
+  max-width: 1200px;
   width: 100%;
   padding: 20px 40px;
   margin: 0 auto;
@@ -618,6 +618,7 @@ body {
 /* INFO SECTION */
 .info-section {
   padding: 0 30px;
+  margin-bottom: 100px;
 }
 .info-section_title {
   text-align: center;
@@ -686,6 +687,119 @@ body {
 .info_title_box {
   display: flex;
 }
+/* CONDITIONS */
+.conditions {
+  padding: 0 40px 40px 40px;
+}
+.conditions_title {
+  font-size: 50px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.conditions_prh {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  margin-bottom: 20px;
+}
+.conditions_col {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 52px;
+}
+
+.conditions_col_box {
+  padding: 0 40px;
+  grid-column: span 2;
+  display: flex;
+  padding: 30px 16px;
+  align-items: center;
+  justify-items: center;
+  gap: 16px;
+  background-color: rgba(27, 27, 27, 1);
+  border-radius: 30px;
+}
+.conditions_col_box:nth-child(5) {
+  grid-column: span 3;
+  max-width: 380px;
+}
+.conditions_col_box:nth-child(4) {
+  grid-column: span 3;
+  max-width: 380px;
+  margin-left: auto;
+}
+
+.conditions_col_circle_img {
+  max-width: 90px;
+  max-height: 90px;
+}
+.consditions_col_box_circle_prh {
+  height: auto;
+  line-height: 24px;
+  letter-spacing: -0.52px;
+  color: rgba(204, 204, 204, 1);
+}
+
+/* whitee box */
+.white_box {
+  background-color: #fff;
+}
+/* <!-- MEETING SECTION --> */
+.meeting_section {
+  padding: 30px 40px 40px 40px;
+}
+.meeting_section_title {
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #000000 0%,
+    rgba(24, 24, 24, 0.34) 100%
+  );
+
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: -1.32px;
+  margin-bottom: 20px;
+}
+.meeting_section_col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 40px;
+}
+.meeting_section_col_box {
+  display: flex;
+  gap: 22px;
+}
+
+.meeting_section_col_box_img {
+  max-width: 60px;
+  min-height: 60px;
+}
+.meeting_section_col_box_prh {
+  background: rgba(0, 0, 0, 1);
+  color: transparent;
+  background-clip: text;
+  line-height: 26px;
+  letter-spacing: -1.14px;
+}
+.meeting_section_col_box_prh_bold {
+  font-weight: 600px;
+}
+
 /* media query */
 
 @media (max-width: 1090px) {
@@ -704,6 +818,21 @@ body {
   .info-section_col {
     gap: 20px 40px;
   }
+  .conditions_col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .conditions_col_box {
+    grid-column: span 1;
+    max-width: 100%;
+  }
+  .conditions_col_box:nth-child(4) {
+    grid-column: span 1;
+    max-width: 100%;
+  }
+  .conditions_col_box:nth-child(5) {
+    grid-column: span 1;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 1049px) {
@@ -718,6 +847,15 @@ body {
   .about_our_row_prh {
     line-height: 38px;
   }
+}
+@media (max-width: 1000px) {
+.meeting_section_col {
+  grid-template-columns: 1fr;
+}
+.meeting_section_col_box_prh {
+  font-size: 20px;
+}
+  
 }
 @media (max-width: 950px) {
   .statistic_section_text {
@@ -764,6 +902,9 @@ body {
   }
   .info-section_box {
     padding-left: 20px;
+  }
+  .conditions {
+    padding: 0 10px 40px 10px;
   }
 }
 @media (max-width: 824px) {
@@ -926,6 +1067,28 @@ body {
     font-size: 16px;
     line-height: 1.2;
   }
+  .conditions_col {
+    grid-template-columns: 1fr;
+  }
+  .conditions_col_box {
+    padding: 16px;
+    max-width: 100%;
+  }
+  .conditions {
+    padding: 0 0 40px 0;
+  }
+  .conditions_title {
+    font-size: 30px;
+    margin-bottom: 36px;
+  }
+  .conditions_prh {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+
+  .meeting_section {
+    padding: 30px 0;
+  }
 }
 
 @media (max-width: 468px) {
@@ -940,5 +1103,11 @@ body {
   }
   .mision-section-box_prh {
     font-size: 18px;
+  }
+  .conditions_col_box {
+    flex-direction: column;
+  }
+  .consditions_col_box_circle_prh {
+    text-align: center;
   }
 }
