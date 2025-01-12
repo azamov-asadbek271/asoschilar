@@ -1547,6 +1547,7 @@ body {
   .price-section_prh {
     line-height: 1.2;
     margin-bottom: 20px;
+    font-size: 20px;
   }
   .price-section_prh_num {
     font-size: 83px;
