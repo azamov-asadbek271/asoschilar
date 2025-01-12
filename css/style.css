@@ -1654,6 +1654,10 @@ body {
 .info-section_box {
   padding: 5px 10px 5px 10px;
 }
+.info-section-box_prg {
+  line-height: 20px;
+  font-size: 17px;
+}
 }
 
 @media (max-width: 468px) {
