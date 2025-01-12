@@ -9,50 +9,42 @@ closeModal.addEventListener("click", () => {
   modal.classList.remove("open_modal_left");
 });
 
-// Animatsiya uchun
+// VALIDATOR
+const forms = document.querySelectorAll(".myForm");
 
-// const scrollTexts = document.querySelectorAll(".animatsiya");
+forms.forEach((form) => {
+  const nameInput = form.querySelector(".name");
+  const phoneInput = form.querySelector(".phone");
+  const nameError = form.querySelector(".nameError");
+  const phoneError = form.querySelector(".phoneError");
 
-// function checkScroll() {
-//   const windowHeight = window.innerHeight;
-//   console.log(windowHeight);
-//   scrollTexts.forEach((text) => {
-//     console.log(text);
-//     const textPosition = text.getBoundingClientRect().top;
-//     if (textPosition < windowHeight - 10) {
-//       text.classList.add("show-text");
-//       text.classList.remove("hide-text");
-//     } else {
-//       text.classList.add("hide-text");
-//       text.classList.remove("show-text");
-//     }
-//   });
-// }
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const cleanedPhone = phoneInput.value.replace(/\s+/g, "");
+    const regex = /^\+?[0-9]{10,20}$/;
+    let isValid = true;
 
-// window.addEventListener("scroll", checkScroll);
+    // Name validation
+    if (!nameInput.value.match(/^[a-zA-Z ]{3,30}$/)) {
+      nameError.classList.remove("hidden");
+      isValid = false;
+    } else {
+      nameError.classList.add("hidden");
+    }
 
-// checkScroll();
+    // Phone validation
+    if (!regex.test(cleanedPhone)) {
+      phoneError.classList.remove("hidden");
+      isValid = false;
+    } else {
+      phoneError.classList.add("hidden");
+    }
 
-// //  animatsiya bottom-left
-
-// const animatedItems = document.querySelectorAll(".animatsiya-left-bottom");
-
-// function handleScrollEvent() {
-//   const viewportHeight = window.innerHeight;
-
-//   animatedItems.forEach((item) => {
-//     const itemPosition = item.getBoundingClientRect().top;
-
-//     if (itemPosition < viewportHeight - 40) {
-//       item.classList.add("left-bottom-visible");
-//       item.classList.remove("left-bottom-hidden");
-//     } else {
-//       item.classList.add("left-bottom-hidden");
-//       item.classList.remove("left-bottom-visible");
-//     }
-//   });
-// }
-
-// window.addEventListener("scroll", handleScrollEvent);
-
-// handleScrollEvent();
+    // If all inputs are valid
+    if (isValid) {
+      alert("Forma yuborildi!");
+      phoneInput.value = "+998";
+      nameInput.value = "";
+    }
+  });
+});

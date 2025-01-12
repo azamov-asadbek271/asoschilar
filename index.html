@@ -29,13 +29,13 @@
             <nav class="header_nav">
                 <ul class="nav_list">
                     <li class="nav-list_item">
-                        <a class="nav-list-item_link" href="#">Biz kimmiz?</a>
+                        <a class="nav-list-item_link" href="#our">Biz kimmiz?</a>
                     </li>
                     <li class="nav-list_item">
-                        <a class="nav-list-item_link" href="#">Qo‘shilish Shartlari</a>
+                        <a class="nav-list-item_link" href="#conditions">Qo‘shilish Shartlari</a>
                     </li>
                     <li class="nav-list_item">
-                        <a class="nav-list-item_link" href="#">Narxlar</a>
+                        <a class="nav-list-item_link" href="#price">Narxlar</a>
                     </li>
                 </ul>
             </nav>
@@ -80,7 +80,7 @@
         <div class="header_box_bottom">
             <h1 class="header_box_bottom_title" data-aos="fade-up">Asoschilar Club </h1>
             <p class="header_box_bottom_prh " data-aos="fade-up">Katta maqsadli tadbirkorlar uchun yopiq biznes klub</p>
-            <a style="margin-top: 20px;" class="header_box_bottom_link " href="#" data-aos="fade-up">
+            <a style="margin-top: 20px;" class="header_box_bottom_link " href="#contact" data-aos="fade-up">
                 <span class="header_box_bottom_link_span">Ariza topshirish</span>
                 <img class="header_box_bottom_link_img" src="./images/header-img/Group-ariza.svg"
                     alt=" barmoq izini rasmi ariza uchun">
@@ -163,16 +163,21 @@
                         data-aos="zoom-in-left" data-aos-duration="1000" alt="rasm">
                     <p class="contact_box_title" data-aos="fade-down">Qo‘shiling va o‘z biznesingizni rivojlantiring!
                     </p>
-                    <form class="form">
+                    <form class="form myForm">
                         <div class="name_form">
                             <label class="name_label" for="name">Ismingiz</label>
-                            <input class="name_input" type="text" id="name" placeholder="Ismingizni kiriting">
+                            <input class="name_input name" type="text" id="name" placeholder="Ismingizni kiriting"
+                                required>
+
+                            <p class="hidden error_name nameError">Ism faqat harflardan iborat bolishi kerak</p>
                         </div>
                         <div class="phone_form">
                             <label class="phone_label" for="phone">Telefon raqamingiz</label>
-                            <input class="phone_input" type="tel" id="phone" value="+998">
+                            <input class="phone_input phone" type="tel" id="phone" value="+998">
+                            <p class="hidden  error_tel phoneError" required>Telefon raqamini to'g'ri kiriting:
+                                +998 XX XXX XX XX</p>
                         </div>
-                        <button class="form_button" type="submit">
+                        <button class="form_button" type="submit" id="button">
                             <span class="header_box_bottom_link_span form_button_span">Ariza topshirish</span>
                             <img class="header_box_bottom_link_img" src="./images/header-img/Group-ariza.svg"
                                 alt=" barmoq izini rasmi ariza uchun">
@@ -180,7 +185,7 @@
                     </form>
                 </section>
                 <!-- ABOUT-OUR -->
-                <section class="about_our">
+                <section id="our" class="about_our">
                     <p class="about_our_title" data-aos="fade-down">Biz kimmiz?</p>
                     <div class="about_our_boxes">
                         <div class="about_our_row" data-aos="fade-right">
@@ -285,7 +290,7 @@
                     </div>
                 </section>
                 <!-- CONITIONS -->
-                <aside class="conditions">
+                <aside id="conditions" class="conditions">
                     <h2 class="conditions_title" data-aos="fade-down">
                         Qo‘shilish Shartlari va Talablar
                     </h2>
@@ -467,7 +472,7 @@
                     </div>
                 </article>
                 <!-- price box -->
-                <section class="price-section">
+                <section id="price" class="price-section">
                     <div class="price_aside">
                         <h3 class="price-section_title" data-aos="fade-down">
                             Qo‘shilish narxi va a’zolik to‘lovi:
@@ -560,23 +565,28 @@
                     </div>
                 </section>
                 <!-- contact box -->
-                <section class="contact_box">
+                <section id="contact" class="contact_box">
                     <img class="contact_box_img_bottom" src="./images/main-img/main-priviilege/Rectangle.png"
                         alt="rasm">
                     <img class="main-privilege_left_bottom" src="./images/main-img/main-priviilege/Rectangle.png"
                         alt="klaviyatura">
                     <p class="contact_box_title" data-aos="fade-down">Qo‘shiling va o‘z biznesingizni rivojlantiring!
                     </p>
-                    <form class="form">
+                    <form class="form myForm">
                         <div class="name_form">
-                            <label class="name_label" for="name">Ismingiz</label>
-                            <input class="name_input" type="text" id="name" placeholder="Ismingizni kiriting">
+                            <label class="name_label" for="name2">Ismingiz</label>
+                            <input class="name_input name" type="text" id="name2" placeholder="Ismingizni kiriting"
+                                required>
+
+                            <p class="hidden error_name nameError">Ism faqat harflardan iborat bolishi kerak</p>
                         </div>
                         <div class="phone_form">
-                            <label class="phone_label" for="phone">Telefon raqamingiz</label>
-                            <input class="phone_input" type="tel" id="phone" value="+998">
+                            <label class="phone_label" for="phone2">Telefon raqamingiz</label>
+                            <input class="phone_input phone" type="tel" id="phone2" value="+998">
+                            <p class="hidden  error_tel phoneError" required>Telefon raqamini to'g'ri kiriting:
+                                +998 XX XXX XX XX</p>
                         </div>
-                        <button class="form_button" type="submit">
+                        <button class="form_button" type="submit" >
                             <span class="header_box_bottom_link_span form_button_span">Ariza topshirish</span>
                             <img class="header_box_bottom_link_img" src="./images/header-img/Group-ariza.svg"
                                 alt=" barmoq izini rasmi ariza uchun">
@@ -610,17 +620,19 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
+        <div class="container">
             <div class="footer_boxes">
                 <img class="footer_logo_img" src="./images/footer/footer_logo.svg" alt=" asoschilar club logotipi">
                 <p class="footer_title">ASOSCHILAR CLUB © 2024</p>
                 <div class="footer_right_box">
-                    <img class="footer_box_img" src="./images/footer/telegram-footer.svg" alt=" telegram icon">
-                    <img class="footer_box_img" src="./images/footer/instagram-footer.svg" alt=" instagramm icon">
+                    <a class="insta_link" href="https://t.me/biznesnonushtasi"><img class="footer_box_img" src="./images/footer/telegram-footer.svg"
+                            alt=" telegram icon"></a>
+                    <a class="insta_link" href="https://www.instagram.com/asoschilar_club/"><img class="footer_box_img" src="./images/footer/instagram-footer.svg"
+                            alt=" instagramm icon"></a>
                     <p class="footer_box_prh">+998 99 033 99 38</p>
                 </div>
             </div>
-      </div>
+        </div>
     </footer>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

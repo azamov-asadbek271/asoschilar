@@ -31,6 +31,9 @@
   text-decoration: none;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth; /* Sekin scroll qilish yoqiladi */
+}
 html,
 body {
   width: 100%;
@@ -309,7 +312,7 @@ body {
 .main-privilege_left {
   width: 330px;
   position: absolute;
-  left: -330px;
+  left: -350px;
   bottom: -320px;
 }
 
@@ -1117,7 +1120,7 @@ body {
 /* FOOTER */
 
 .footer_boxes {
-  padding: 40px  80px 40px 90px;
+  padding: 40px 80px 40px 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1145,12 +1148,35 @@ body {
   width: 23px;
   height: 22px;
 }
+.footer_box_prh:hover {
+    color: #fff;
+}
 .footer_box_prh {
   font-size: 18px;
   line-height: 16px;
   background: rgba(200, 200, 200, 1);
   color: transparent;
-  background-clip:text;
+  background-clip: text;
+}
+.form_button:hover {
+  background-color:rgb(216, 214, 214);
+}
+
+/* validator */
+.error_name {
+  font-size: 12px;
+  color: red;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+.error_tel {
+  font-size: 12px;
+  color: red;
+  margin-top: 2px;
+  margin-left: 15px;
+}
+.hidden {
+  display: none;
 }
 /* media query */
 
@@ -1252,7 +1278,7 @@ body {
     gap: 20px;
   }
   .footer_boxes {
-    padding: 40px  40px 40px 50px;
+    padding: 40px 40px 40px 50px;
   }
   .footer_title {
     margin-left: 20px;
@@ -1540,31 +1566,30 @@ body {
   .footer_boxes {
     flex-direction: column;
     gap: 40px;
-
   }
-.footer_title {
-  margin-left: 0;
-  order: 3;
-}
-.main-privilege_left {
-  width: 160px;
-  left: -120px;
-}
-.contact_box_img {
-  width: 160px;
-  right: -120px;
-  bottom: -200px
-}
-.contact_box_img_bottom {
-  width: 160px;
-  left: -120px;
-  top: -100px;
-}
-.main-privilege_left_bottom  {
-  width: 160px;
-  right: -120px;
-  bottom: -100px
-}
+  .footer_title {
+    margin-left: 0;
+    order: 3;
+  }
+  .main-privilege_left {
+    width: 160px;
+    left: -120px;
+  }
+  .contact_box_img {
+    width: 160px;
+    right: -120px;
+    bottom: -200px;
+  }
+  .contact_box_img_bottom {
+    width: 160px;
+    left: -120px;
+    top: -100px;
+  }
+  .main-privilege_left_bottom {
+    width: 160px;
+    right: -120px;
+    bottom: -100px;
+  }
 }
 
 @media (max-width: 468px) {
