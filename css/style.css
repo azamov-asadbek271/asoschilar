@@ -1637,6 +1637,9 @@ body {
   .statistic_section {
  margin-bottom: 20px;
 }
+.mision-section {
+  margin-bottom: 60px;
+}
 
 @media (max-width: 468px) {
   .about_our_img {
