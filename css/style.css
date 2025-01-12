@@ -1587,7 +1587,7 @@ body {
   .main-privilege_left {
     width: 160px;
     left: -80px;
-    bottom: 250px;
+    bottom: -250px;
   }
   .contact_box_img {
     width: 160px;
