@@ -1499,7 +1499,8 @@ body {
   }
   .conditions_title {
     font-size: 30px;
-    margin-bottom: 36px;
+    line-height: 32px;
+    margin-bottom: 16px;
   }
   .conditions_prh {
     font-size: 20px;
