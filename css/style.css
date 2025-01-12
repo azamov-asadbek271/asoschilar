@@ -1613,7 +1613,10 @@ body {
   .spiker_box_img {
        width: 70px;
     height: 70px;
+  
   }
+  .mini-container {
+    padding: 20px;
   }
 }
 
