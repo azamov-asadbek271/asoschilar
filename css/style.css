@@ -459,7 +459,7 @@ body {
   outline: none;
 }
 .form_button {
-  max-width: 265px;
+  max-width: 235px;
   width: 100%;
   border-radius: 22px;
   display: flex;
@@ -1586,7 +1586,8 @@ body {
   }
   .main-privilege_left {
     width: 160px;
-    left: -120px;
+    left: -100px;
+    bottom: 250px;
   }
   .contact_box_img {
     width: 160px;
@@ -1600,8 +1601,8 @@ body {
   }
   .main-privilege_left_bottom {
     width: 160px;
-    right: -120px;
-    bottom: -100px;
+    right: -100px;
+    bottom: -70px;
   }
   .netvorking_box_img {
     width: 50px;
