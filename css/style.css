@@ -1574,7 +1574,10 @@ body {
     font-size: 110px;
   }
   .club-members_col {
-    grid-template-columns: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .connection-section_title {
     font-size: 28px;
@@ -1646,48 +1649,47 @@ body {
     padding: 0 10px;
   }
   .statistic_section {
- margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .statistic_section_title {
+    margin-bottom: 20px;
+  }
+  .mision-section {
+    margin-bottom: 60px;
+  }
+  .info-section_title {
+    text-align: center;
+    line-height: 32px;
+    font-size: 24px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main-privilege_title {
+    margin-bottom: 20px;
+  }
+  .consditions_col_box_circle_prh {
+    text-align: start;
+  }
+  .price-section {
+    margin-bottom: 30px;
+  }
+  .club-members_col_box {
+    max-width: 300px;
+  }
 }
-.statistic_section_title {
-  margin-bottom: 20px;
-}
-.mision-section {
-  margin-bottom: 60px;
-}
-.info-section_title {
-  text-align: center;
-  line-height: 32px;
-  font-size: 24px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.main-privilege_title {
-  margin-bottom: 20px;
-}
-.consditions_col_box_circle_prh {
-  text-align: start;
-}
-.price-section {
-margin-bottom: 30px;
-}
-
-}
-
-
 
 @media (max-width: 600px) {
-.info-section {
-  padding: 0 10px;
-  margin-bottom: 60px;
-}
-.info-section_box {
-  padding: 5px 10px 5px 10px;
-}
-.info-section-box_prg {
-  line-height: 18px;
-  font-size: 15px;
-}
-
+  .info-section {
+    padding: 0 10px;
+    margin-bottom: 60px;
+  }
+  .info-section_box {
+    padding: 5px 10px 5px 10px;
+  }
+  .info-section-box_prg {
+    line-height: 18px;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 468px) {
@@ -1709,7 +1711,7 @@ margin-bottom: 30px;
   .conditions_col {
     padding: 0 10px;
   }
- 
+
   .meeting_section {
     padding: 30px 20px;
   }
