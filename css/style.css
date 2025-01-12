@@ -1546,6 +1546,10 @@ body {
   margin-left: 0;
   order: 3;
 }
+.main-privilege_left {
+  width: 160px;
+  left: -120px;
+}
 }
 
 @media (max-width: 468px) {
