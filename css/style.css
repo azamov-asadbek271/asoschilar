@@ -47,8 +47,8 @@ body {
   overflow-x: hidden;
   color: aliceblue;
   font-family: Poppins-regular;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
   position: relative;
 }
 /* header */
@@ -1410,7 +1410,10 @@ body {
   }
   .main-card_title {
     font-size: 27px;
-    margin-bottom: 57px;
+    margin-bottom: 47px;
+  }
+  .header-container {
+    margin-bottom: 70px;
   }
   .main_privilege_boxes {
     align-items: center;
@@ -1598,6 +1601,10 @@ body {
     width: 160px;
     right: -120px;
     bottom: -100px;
+  }
+  .netvorking_box_img {
+    width: 76px ;
+    height: 76px;
   }
 }
 
