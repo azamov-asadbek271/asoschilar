@@ -1671,7 +1671,7 @@ body {
   line-height: 18px;
   font-size: 15px;
 }
-.statistic_section_title 
+
 }
 
 @media (max-width: 468px) {
@@ -1711,5 +1711,9 @@ body {
   }
   .connection-section {
     padding: 40px 10px;
+  }
+  .joining-article_col_box_prh {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
