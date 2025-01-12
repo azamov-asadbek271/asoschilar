@@ -1640,6 +1640,21 @@ body {
 .mision-section {
   margin-bottom: 60px;
 }
+.info-section_title {
+  text-align: center;
+  line-height: 32px;
+  font-size: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 600px) {
+.info-section {
+  padding: 0;
+}
+.info-section_box {
+  padding: 10px;
+}
+}
 
 @media (max-width: 468px) {
   .about_our_img {
