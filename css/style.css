@@ -1716,4 +1716,7 @@ body {
     font-size: 16px;
     line-height: 18px;
   }
+  .joining-article {
+    margin-bottom: 50px;
+  }
 }
