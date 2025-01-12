@@ -1408,6 +1408,10 @@ body {
     font-size: 18px;
     line-height: 20px;
   }
+  .main-card_title {
+    font-size: 27px;
+    margin-bottom: 57px;
+  }
   .main_privilege_boxes {
     align-items: center;
     justify-content: center;
