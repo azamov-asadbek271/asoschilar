@@ -1658,7 +1658,16 @@ body {
   font-size: 24px;
   margin-right: auto;
   margin-left: auto;
-} }
+}
+.main-privilege_title {
+  margin-bottom: 20px;
+}
+
+
+}
+
+
+
 @media (max-width: 600px) {
 .info-section {
   padding: 0 10px;
