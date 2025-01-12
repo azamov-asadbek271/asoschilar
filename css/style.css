@@ -1603,8 +1603,17 @@ body {
     bottom: -100px;
   }
   .netvorking_box_img {
-    width: 76px ;
-    height: 76px;
+    width: 70px;
+    height: 70px;
+  }
+  .razborlar_box_img {
+    width: 70px;
+    height: 70px;
+  }
+  .spiker_box_img {
+       width: 70px;
+    height: 70px;
+  }
   }
 }
 
