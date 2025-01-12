@@ -1738,4 +1738,7 @@ body {
   .joining-article {
     margin-bottom: 50px;
   }
+  .header_box_bottom_title {
+    font-size: 33px;
+  }
 }
