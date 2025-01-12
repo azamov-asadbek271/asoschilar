@@ -1591,8 +1591,8 @@ body {
   }
   .contact_box_img {
     width: 160px;
-    right: -120px;
-    bottom: -160px;
+    right: -100px;
+    bottom: -140px;
   }
   .contact_box_img_bottom {
     width: 160px;
@@ -1624,6 +1624,12 @@ body {
   }
   .mini-container {
     padding: 20px;
+  }
+  .form_button_span {
+    font-size: 16px;
+  }
+  .form_button {
+    width: 90%;
   }
   
 }
