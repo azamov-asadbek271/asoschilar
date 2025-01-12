@@ -1035,7 +1035,6 @@ body {
 .club-members_col-box_img {
   display: block;
   width: 100%;
-  object-fit: cover;
   margin-bottom: 20px;
 }
 .club-members_col-box_title {
