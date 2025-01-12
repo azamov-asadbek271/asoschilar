@@ -1462,7 +1462,7 @@ body {
     flex-direction: column-reverse;
   }
   .about_our {
-    padding: 0 20;
+    padding: 0 10px;
   }
 
   /* MISSON */
@@ -1629,6 +1629,9 @@ body {
 }
 
 @media (max-width: 468px) {
+  .about_our_img {
+    max-width: 600px;
+  }
   .mini-container {
     padding: 0;
   }
