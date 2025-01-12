@@ -1676,6 +1676,9 @@ body {
   .club-members_col_box {
     max-width: 300px;
   }
+  .club-members {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 600px) {
