@@ -938,7 +938,7 @@ body {
 }
 .price-section_month {
   padding: 30px;
-  border-top: 2px dashed rgba(76, 76, 76, 1);
+  border-top: 4px dashed rgba(76, 76, 76, 1);
 }
 .price-section_month_box {
   display: grid;
@@ -1542,10 +1542,11 @@ body {
   .price-section_title {
     margin-bottom: 30px;
     font-size: 30px;
+    line-height: 32px;
   }
   .price-section_prh {
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .price-section_prh_num {
     font-size: 83px;
