@@ -1605,14 +1605,19 @@ body {
   .netvorking_box_img {
     width: 70px;
     height: 70px;
+    object-fit: cover;
+
   }
   .razborlar_box_img {
     width: 70px;
     height: 70px;
+    object-fit: cover;
+
   }
   .spiker_box_img {
        width: 70px;
     height: 70px;
+    object-fit: cover;
   
   }
   .mini-container {
