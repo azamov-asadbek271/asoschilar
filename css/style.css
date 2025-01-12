@@ -1662,7 +1662,9 @@ body {
 .main-privilege_title {
   margin-bottom: 20px;
 }
-
+.consditions_col_box_circle_prh {
+  text-align: start;
+}
 
 }
 
