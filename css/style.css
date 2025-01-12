@@ -1650,6 +1650,7 @@ body {
 @media (max-width: 600px) {
 .info-section {
   padding: 0 10px;
+  margin-bottom: 60px;
 }
 .info-section_box {
   padding: 5px 10px 5px 10px;
