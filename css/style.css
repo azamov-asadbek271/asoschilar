@@ -1504,7 +1504,10 @@ body {
   }
   .conditions_prh {
     font-size: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
+  }
+  .conditions_col_circle_img {
+    width: 70px;
   }
 
   .meeting_section {
