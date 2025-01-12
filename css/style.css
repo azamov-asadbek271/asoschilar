@@ -1462,7 +1462,7 @@ body {
     flex-direction: column-reverse;
   }
   .about_our {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   /* MISSON */
@@ -1592,7 +1592,7 @@ body {
   .contact_box_img {
     width: 160px;
     right: -120px;
-    bottom: -200px;
+    bottom: -160px;
   }
   .contact_box_img_bottom {
     width: 160px;
